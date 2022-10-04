@@ -1,0 +1,135 @@
+.container-form-table {
+    display: flex;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+.table-columns {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.table-item {
+    border: 1px solid black;
+    padding: 10px 30px;
+    margin-top: -1px;
+    margin-right: -1px;
+    background-color: rgba(247, 236, 224, 0.918);
+    
+}
+
+.table-item:first-child {
+    background-color: rgb(127, 131, 131);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.error {
+    background-color: rgba(165, 42, 42, 0.644);
+}
+
+.form {
+    margin-top: 30px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 10px;
+    border: 1px solid rgb(127, 131, 131);
+}
+
+.input {
+    padding: 5px 0 0 15px;
+    margin-bottom: 10px;
+    height: 25px;
+    border: none;
+    background-color: rgb(247, 236, 224);
+    border-bottom: 2px dashed rgb(127, 131, 131);
+    cursor: pointer;
+    transition: background-color, border, color, 0.3s ease-in-out;
+    font-size: 16px;
+}
+
+.label {
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 15px;
+    opacity: 0.5;
+}
+
+.input:hover {
+    background-color: rgb(127, 131, 131);
+}
+
+.input:focus {
+    outline: none;
+    background-color: beige;
+    border-bottom: 2px solid rgb(127, 131, 131);
+}
+
+
+.btn {
+    align-self: center;
+    padding: 10px 20px;
+    max-width: 50%;
+    background-color: rgb(127, 131, 131);
+    color: whitesmoke;
+    border: none;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(174, 177, 177);
+}
+
+/*==================СТТИЛИ АЛЕРТА================*/
+
+
+.alert-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    vertical-align: middle;
+    width: 500px;
+    min-height: 250px;
+    background-color: rgba(253, 17, 17, 0.596);
+    margin: 0 auto;    
+}
+
+
+.alert-btn {
+    font-size: 20px;
+    border-radius: 5px;
+    width: 100px;
+    height: 50px;
+    background-color: antiquewhite;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 40px;
+}
+
+.alert-btn:hover {
+    color: bisque;
+    background-color: rgb(46, 165, 66);
+    transition-duration: 0.3s;
+    box-shadow: 0 0 10px 5px rgb(0, 255, 55);
+}
+
+
+
+.alert-message {
+    padding-top: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    margin-bottom: 50px;
+    max-width: 450px;
+    text-align: center;
+}
