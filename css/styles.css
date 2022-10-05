@@ -133,3 +133,79 @@
     max-width: 450px;
     text-align: center;
 }
+
+
+/*==========================ВЫПАДАЮЩЕЕ МЕНЮ===================================*/
+
+.filter-container {
+    display: inline-block;
+    text-align: center;
+    width: 322px;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.filter {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.filter-heading {
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    width: 100%;
+    cursor: pointer;
+    padding: 5px 0;
+    border: 1px solid rgba(236, 179, 93, 0.589);
+    background-color:antiquewhite
+}
+
+.filter-heading:hover {
+    background-color: rgb(113, 117, 92);
+    color: aliceblue;
+}
+
+.active {
+    background-color: rgb(113, 117, 92);
+    color: aliceblue;
+}
+
+.disabled-item {
+    display: none;
+}
+
+.menu-item {
+    margin-bottom: 5px;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+    width: 100%;
+    border: 1px solid rgba(236, 179, 93, 0.589);
+}
+
+.menu-item:hover {
+    background-color: rgba(236, 179, 93, 0.589) ;
+}
+
+.menu-itm-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-btn {
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    background-color: rgb(191, 199, 156);
+    margin-left: 5px;
+}
+
+.menu-btn:hover {
+    background-color: rgb(113, 117, 92);
+    color: aliceblue;
+}
+
+.item-input {
+    width: 100%;
+}

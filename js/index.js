@@ -226,6 +226,106 @@ function showAlertMessage(message, button) {
     document.body.append(alert)
 };
 
+// выпадающее меню
+function createFilterList() {
+    let click = 1;
+    let filter = document.createElement('ul');
+    let filterContainer = document.createElement('div');
+    filterContainer.classList.add('filter-container');
+    filterContainer.append(filter);
+    let filterHeading = document.createElement('li');
+    filterHeading.textContent = 'ПОИСК СТУДЕНТА'
+    filter.classList.add('filter');
+    filterHeading.classList.add('filter-heading');
+    filterHeading.addEventListener('click', function() {
+        click++
+        this.classList.add('active')
+        let searchFullName = document.createElement('li');
+        let searchFullNameWrapper = document.createElement('div');
+        let searchFullNameItem = document.createElement('input');
+        let searchFullNameBTN = document.createElement('button');
+
+        searchFullName.classList.add('menu-item');
+        searchFullNameWrapper.classList.add('menu-itm-wrapper')
+        searchFullNameItem.placeholder = 'Поиск по фамилии'
+        searchFullNameItem.classList.add('item-input')
+        searchFullNameBTN.textContent = 'Найти'
+        searchFullNameBTN.classList.add('menu-btn')
+
+
+        searchFullNameWrapper.append(searchFullNameItem, searchFullNameBTN);
+        searchFullName.append(searchFullNameWrapper);
+        filter.append(searchFullName);
+
+        let searchFaculty = document.createElement('li');
+        let searchFacultyWrapper = document.createElement('div');
+        let searchFacultyItem = document.createElement('input');
+        let searchFacultyBTN = document.createElement('button');
+
+        searchFaculty.classList.add('menu-item');
+        searchFacultyWrapper.classList.add('menu-itm-wrapper')
+        searchFacultyItem.placeholder = 'Поиск по факультету'
+        searchFacultyItem.classList.add('item-input')
+        searchFacultyBTN.textContent = 'Найти'
+        searchFacultyBTN.classList.add('menu-btn')
+
+
+        searchFacultyWrapper.append(searchFacultyItem, searchFacultyBTN);
+        searchFaculty.append(searchFacultyWrapper);
+        filter.append(searchFaculty);
+
+        let searchStartStudy = document.createElement('li');
+        let searchStartStudyWrapper = document.createElement('div');
+        let searchStartStudyItem = document.createElement('input');
+        let searchStartStudyBTN = document.createElement('button');
+
+        searchStartStudy.classList.add('menu-item');
+        searchStartStudyWrapper.classList.add('menu-itm-wrapper')
+        searchStartStudyItem.placeholder = 'Поиск по году поступления'
+        searchStartStudyItem.classList.add('item-input')
+        searchStartStudyBTN.textContent = 'Найти'
+        searchStartStudyBTN.classList.add('menu-btn')
+
+
+        searchStartStudyWrapper.append(searchStartStudyItem, searchStartStudyBTN);
+        searchStartStudy.append(searchStartStudyWrapper);
+        filter.append(searchStartStudy);
+
+        let searchFinishStudy = document.createElement('li');
+        let searchFinishStudyWrapper = document.createElement('div');
+        let searchFinishStudyItem = document.createElement('input');
+        let searchFinishStudyBTN = document.createElement('button');
+
+        searchFinishStudy.classList.add('menu-item');
+        searchFinishStudyWrapper.classList.add('menu-itm-wrapper')
+        searchFinishStudyItem.placeholder = 'Поиск по году окончания'
+        searchFinishStudyItem.classList.add('item-input')
+        searchFinishStudyBTN.textContent = 'Найти'
+        searchFinishStudyBTN.classList.add('menu-btn')
+
+
+        searchFinishStudyWrapper.append(searchFinishStudyItem, searchFinishStudyBTN);
+        searchFinishStudy.append(searchFinishStudyWrapper);
+        filter.append(searchFinishStudy);
+
+
+
+        if (click > 2) {
+            let listItems = document.querySelectorAll('.menu-item');
+            listItems.forEach(el => {el.classList.add('disabled-item')})
+            this.classList.remove('active');
+            click = 1;
+        }
+    });
+
+
+
+
+    filter.append(filterHeading)
+    container.append(filterContainer)
+}
+
 addNewStudent()
 renderingTable()
+createFilterList()
 
