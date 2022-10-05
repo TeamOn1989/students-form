@@ -1,16 +1,191 @@
 const STUDENTS_ARRAY = [
     {
-    fullname: 'Убойный говнорез', 
-    faculty: 'Убойных писек', 
-    birthdate: '30.30.2020', 
-    student: '02.06.2030',
+         fullname: 'Иванов Иван Иванович', 
+         faculty: 'Менеджмент', 
+         birthdate: '2000-12-22 (20 лет)', 
+         student: '2000-12-22 (3-курс)',
     },
+    {
+        fullname: 'Петрова Зинаида Ольговна', 
+        faculty: 'Истории и обществознания', 
+        birthdate: '2001-12-22 (29 лет)', 
+        student: '2018-12-22 (4-курс)',
+    },
+    {
+        fullname: 'Михалков Никита Сергеевич', 
+        faculty: 'Основы безопасности хомячков', 
+        birthdate: '1989-12-22 (33 года)', 
+        student: '2018-12-22 (4-курс)',
+    },
+    {
+        fullname: 'Шнуров Алексей Михайлович', 
+        faculty: 'Основы управления катамараном', 
+        birthdate: '1958-12-22 (63 года)', 
+        student: '2020-12-22 (2-курс)',
+    },
+    {
+        fullname: 'Насыров Мурать Гадижбеколдскульный', 
+        faculty: 'Мода как она есть', 
+        birthdate: '1988-12-22 (43 года)', 
+        student: '2022-12-22 (1-курс)',
+    },
+    {
+        fullname: 'Орехова Белочка Петровна', 
+        faculty: 'Истории и обществознания', 
+        birthdate: '2021-12-22 (2 года)', 
+        student: '2019-2022 (3-курс)',
+    },
+    {
+        fullname: 'Иванов Иван Иванович', 
+        faculty: 'Менеджмент', 
+        birthdate: '2000-12-22 (20 лет)', 
+        student: '2000-12-22 (3-курс)',
+   },
+   {
+       fullname: 'Петрова Зинаида Ольговна', 
+       faculty: 'Истории и обществознания', 
+       birthdate: '2001-12-22 (29 лет)', 
+       student: '2018-12-22 (4-курс)',
+   },
+   {
+       fullname: 'Михалков Никита Сергеевич', 
+       faculty: 'Основы безопасности хомячков', 
+       birthdate: '1989-12-22 (33 года)', 
+       student: '2018-12-22 (4-курс)',
+   },
+   {
+       fullname: 'Шнуров Алексей Михайлович', 
+       faculty: 'Основы управления катамараном', 
+       birthdate: '1958-12-22 (63 года)', 
+       student: '2020-12-22 (2-курс)',
+   },
+   {
+       fullname: 'Насыров Мурать Гадижбеколдскульный', 
+       faculty: 'Мода как она есть', 
+       birthdate: '1988-12-22 (43 года)', 
+       student: '2022-2022 (1-курс)',
+   },
+   {
+       fullname: 'Орехова Белочка Петровна', 
+       faculty: 'Истории и обществознания', 
+       birthdate: '2021-12-22 (2 года)', 
+       student: '2019-12-22 (3-курс)',
+   },
+   {
+    fullname: 'Иванов Иван Иванович', 
+    faculty: 'Менеджмент', 
+    birthdate: '2000-12-22 (20 лет)', 
+    student: '2000-12-22 (3-курс)',
+},
+{
+   fullname: 'Петрова Зинаида Ольговна', 
+   faculty: 'Истории и обществознания', 
+   birthdate: '2001-12-22 (29 лет)', 
+   student: '2018-2022 (4-курс)',
+},
+{
+   fullname: 'Михалков Никита Сергеевич', 
+   faculty: 'Основы безопасности хомячков', 
+   birthdate: '1989-12-22 (33 года)', 
+   student: '2018-12-22 (4-курс)',
+},
+{
+   fullname: 'Шнуров Алексей Михайлович', 
+   faculty: 'Основы управления катамараном', 
+   birthdate: '1958-12-22 (63 года)', 
+   student: '2020-12-22 (2-курс)',
+},
+{
+   fullname: 'Насыров Мурать Гадижбеколдскульный', 
+   faculty: 'Мода как она есть', 
+   birthdate: '1988-12-22 (43 года)', 
+   student: '2022-12-22 (1-курс)',
+},
+{
+   fullname: 'Орехова Белочка Петровна', 
+   faculty: 'Истории и обществознания', 
+   birthdate: '2021-12-22 (2 года)', 
+   student: '2019-12-22 (3-курс)',
+},{
+    fullname: 'Иванов Иван Иванович', 
+    faculty: 'Менеджмент', 
+    birthdate: '2000-12-22 (20 лет)', 
+    student: '2000-12-22 (3-курс)',
+},
+{
+   fullname: 'Петрова Зинаида Ольговна', 
+   faculty: 'Истории и обществознания', 
+   birthdate: '2001-12-22 (29 лет)', 
+   student: '2018-12-22 (4-курс)',
+},
+{
+   fullname: 'Михалков Никита Сергеевич', 
+   faculty: 'Основы безопасности хомячков', 
+   birthdate: '1989-12-22 (33 года)', 
+   student: '2018-12-22 (4-курс)',
+},
+{
+   fullname: 'Шнуров Алексей Михайлович', 
+   faculty: 'Основы управления катамараном', 
+   birthdate: '1958-12-22 (63 года)', 
+   student: '2020-12-22 (2-курс)',
+},
+{
+   fullname: 'Насыров Мурать Гадижбеколдскульный', 
+   faculty: 'Мода как она есть', 
+   birthdate: '1988-12-22 (43 года)', 
+   student: '2010-2014 (1-курс)',
+},
+{
+   fullname: 'Орехова Белочка Петровна', 
+   faculty: 'Истории и обществознания', 
+   birthdate: '2021-12-22 (2 года)', 
+   student: '2019-12-22 (3-курс)',
+},
+{
+    fullname: 'Иванов Иван Иванович', 
+    faculty: 'Менеджмент', 
+    birthdate: '2000-12-22 (20 лет)', 
+    student: '2000-12-22 (3-курс)',
+},
+{
+   fullname: 'Петрова Зинаида Ольговна', 
+   faculty: 'Истории и обществознания', 
+   birthdate: '2001-12-22 (29 лет)', 
+   student: '2018-12-22 (4-курс)',
+},
+{
+   fullname: 'Михалков Никита Сергеевич', 
+   faculty: 'Основы безопасности хомячков', 
+   birthdate: '1989-12-22 (33 года)', 
+   student: '2018-12-22 (4-курс)',
+},
+{
+   fullname: 'Шнуров Алексей Михайлович', 
+   faculty: 'Основы управления катамараном', 
+   birthdate: '1958-12-22 (63 года)', 
+   student: '2020-12-22 (2-курс)',
+},
+{
+   fullname: 'Насыров Мурать Гадижбеколдскульный', 
+   faculty: 'Мода как она есть', 
+   birthdate: '1988-12-22 (43 года)', 
+   student: '2022-12-22 (1-курс)',
+},
+{
+   fullname: 'Орехова Белочка Петровна', 
+   faculty: 'Истории и обществознания', 
+   birthdate: '2021-12-22 (2 года)', 
+   student: '2019-12-22 (3-курс)',
+},
 ];
+
+let temp = [];
 
 let container = document.getElementById('container');
 let student;
 
-function renderingTable() {
+function renderingTable(arr) {
     let tableWrapper = document.createElement('div');
     let nameList = document.createElement('ul');
     let facultyList = document.createElement('ul');
@@ -26,24 +201,36 @@ function renderingTable() {
     let nameListHeading = document.createElement('li');
     nameListHeading.classList.add('table-item')
     nameListHeading.textContent = 'Фамилия Имя Отчество';
+    nameListHeading.addEventListener('click', function() {
+        sortByName(STUDENTS_ARRAY)
+    });
     nameList.append(nameListHeading);
 
     let facultyListHeading = document.createElement('li');
     facultyListHeading.classList.add('table-item')
     facultyListHeading.textContent = 'Факултет';
+    facultyListHeading.addEventListener('click', function() {
+        sortByFaculty(STUDENTS_ARRAY)
+    })
     facultyList.append(facultyListHeading);
 
     let byrthDayListHeading = document.createElement('li');
     byrthDayListHeading.classList.add('table-item')
     byrthDayListHeading.textContent = 'Дата рождения / возраст';
+    byrthDayListHeading.addEventListener('click', function() {
+        sortByAge(STUDENTS_ARRAY)
+    })
     byrthDayList.append(byrthDayListHeading);
 
     let studiesListHeading = document.createElement('li');
     studiesListHeading.classList.add('table-item')
     studiesListHeading.textContent = 'Дата обучения / курс';
+    studiesListHeading.addEventListener('click', function() {
+        sortByStudentYears(STUDENTS_ARRAY)
+    })
     studiesList.append(studiesListHeading);
 
-    for (let elem of STUDENTS_ARRAY) {
+    for (let elem of arr) {
         let fullname = document.createElement('li');
         fullname.classList.add('table-item')
         fullname.textContent = elem.fullname
@@ -244,6 +431,17 @@ function createFilterList() {
         let searchFullNameWrapper = document.createElement('div');
         let searchFullNameItem = document.createElement('input');
         let searchFullNameBTN = document.createElement('button');
+        searchFullNameBTN.addEventListener('click', function() {
+            for (let el of STUDENTS_ARRAY) {
+                if (el.fullname.toLowerCase().includes(searchFullNameItem.value.toLowerCase())) {
+                    temp.push(el)
+                }
+            }
+            let table = document.querySelector('.container-form-table');
+            container.removeChild(table);
+            renderingTable(temp)
+            temp = []
+        });
 
         searchFullName.classList.add('menu-item');
         searchFullNameWrapper.classList.add('menu-itm-wrapper')
@@ -261,6 +459,17 @@ function createFilterList() {
         let searchFacultyWrapper = document.createElement('div');
         let searchFacultyItem = document.createElement('input');
         let searchFacultyBTN = document.createElement('button');
+        searchFacultyBTN.addEventListener('click', function() {
+            for (let el of STUDENTS_ARRAY) {
+                if (el.faculty.toLowerCase().includes(searchFacultyItem.value.toLowerCase())) {
+                    temp.push(el)
+                }
+            }
+            let table = document.querySelector('.container-form-table');
+            container.removeChild(table);
+            renderingTable(temp)
+            temp = []
+        });
 
         searchFaculty.classList.add('menu-item');
         searchFacultyWrapper.classList.add('menu-itm-wrapper')
@@ -278,6 +487,17 @@ function createFilterList() {
         let searchStartStudyWrapper = document.createElement('div');
         let searchStartStudyItem = document.createElement('input');
         let searchStartStudyBTN = document.createElement('button');
+        searchStartStudyBTN.addEventListener('click', function() {
+            for (let el of STUDENTS_ARRAY) {
+                if (el.student.substring(0, 4).includes(searchStartStudyItem.value)) {
+                    temp.push(el)
+                }
+            }
+            let table = document.querySelector('.container-form-table');
+            container.removeChild(table);
+            renderingTable(temp)
+            temp = []
+        });
 
         searchStartStudy.classList.add('menu-item');
         searchStartStudyWrapper.classList.add('menu-itm-wrapper')
@@ -295,6 +515,17 @@ function createFilterList() {
         let searchFinishStudyWrapper = document.createElement('div');
         let searchFinishStudyItem = document.createElement('input');
         let searchFinishStudyBTN = document.createElement('button');
+        searchFinishStudyBTN.addEventListener('click', function() {
+            for (let el of STUDENTS_ARRAY) {
+                if (el.student.substring(5, 9).includes(searchFinishStudyItem.value)) {
+                    temp.push(el)
+                }
+            }
+            let table = document.querySelector('.container-form-table');
+            container.removeChild(table);
+            renderingTable(temp)
+            temp = []
+        });
 
         searchFinishStudy.classList.add('menu-item');
         searchFinishStudyWrapper.classList.add('menu-itm-wrapper')
@@ -317,15 +548,44 @@ function createFilterList() {
             click = 1;
         }
     });
-
-
-
-
     filter.append(filterHeading)
     container.append(filterContainer)
 }
 
+function sortByName(arr) {
+    arr.sort((a, b) => a.fullname > b.fullname ? 1 : -1);
+    let table = document.querySelector('.container-form-table');
+    container.removeChild(table)
+    renderingTable()
+    return arr
+}
+
+function sortByFaculty(arr) {
+    arr.sort((a, b) => a.faculty > b.faculty ? 1 : -1);
+    let table = document.querySelector('.container-form-table');
+    container.removeChild(table)
+    renderingTable()
+    return arr
+}
+
+function sortByAge(arr) {
+    arr.sort((a, b) => a.birthdate.substring(0, 4) > b.birthdate.substring(0, 4) ? 1 : -1);
+    let table = document.querySelector('.container-form-table');
+    container.removeChild(table)
+    renderingTable()
+    return arr
+}
+
+function sortByStudentYears(arr) {
+    arr.sort((a, b) => a.student.substring(0, 4) > b.student.substring(0, 4) ? 1 : -1);
+    let table = document.querySelector('.container-form-table');
+    container.removeChild(table)
+    renderingTable()
+    return arr
+}
+
 addNewStudent()
-renderingTable()
+renderingTable(STUDENTS_ARRAY)
 createFilterList()
 
+// sortByName(STUDENTS_ARRAY)

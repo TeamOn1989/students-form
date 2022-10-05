@@ -1,8 +1,12 @@
 .container-form-table {
     display: flex;
+    box-sizing: border-box;
     position: absolute;
     top: 30px;
     right: 30px;
+    height: 95vh;
+    overflow: scroll;
+    z-index: -10;
 }
 
 .table-columns {
